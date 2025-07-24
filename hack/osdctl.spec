@@ -12,7 +12,7 @@
 
 # https://github.com/openshift/osdctl
 %global goipath         github.com/openshift/osdctl
-Version:                0.45.0
+Version:                %{_rpkg_version}
 
 # REMOVE BEFORE SUBMITTING THIS FOR REVIEW
 # ---

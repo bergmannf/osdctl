@@ -38,8 +38,7 @@ Release:        %autorelease
 Summary:        CLI for the OSD utilities
 License:        Apache-2.0
 URL:            https://github.com/bergmannf/osdctl
-Source:         %{gosource}
-
+Source:         %{url}/archive/v%{version}/osdctl-%{version}.tar.gz
 BuildRequires: git
 
 %description %{common_description}

@@ -20,10 +20,10 @@ jobs:
           curl --request POST \
             --header "Content-Type: application/json" \
             --header "Accept: application/json" \
-            --data '{
-                "ref_type": "tag",
-                "ref": "$GITHUB_REF"
-            }' \
+            --data "{
+                \"ref_type\": \"tag\",
+                \"ref\": \"${GITHUB_REF#refs/tags/}\"
+            }" \
             --url "$COPR_URL"
         env:
           COPR_URL: ${{ secrets.COPR_URL }}
